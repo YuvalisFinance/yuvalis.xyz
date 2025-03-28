@@ -203,6 +203,12 @@ a{
   }
 }
 
+@media (max-width:800px) {
+  .square{
+    transform: translate(-60%, -60%) rotate(45deg);
+  }
+}
+
 @media (max-width:480px) {
   #Clients h2{
     font-size: 1.75rem;
