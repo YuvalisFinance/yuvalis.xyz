@@ -40,6 +40,7 @@ p{font-family: 'Tenor Sans', sans-serif;}
   padding: 4rem 2rem;
   position: relative;
   margin-bottom: 8rem;
+  overflow: visible;
 }
 
 .column1 {
@@ -56,16 +57,13 @@ p{font-family: 'Tenor Sans', sans-serif;}
 }
 
 .column2 {
-  position: fixed;
-  right: 2rem;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
   width: 40%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 .container h1 {
@@ -109,10 +107,11 @@ p{font-family: 'Tenor Sans', sans-serif;}
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  z-index: 1;
+  z-index: 2;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .square img {
@@ -120,7 +119,7 @@ p{font-family: 'Tenor Sans', sans-serif;}
   width: 25rem;
   position: relative;
   transform: rotate(-45deg);
-  z-index: 1;
+  z-index: 2;
   object-fit: contain;
 }
 
@@ -305,12 +304,10 @@ a{
 
   .column2 {
     position: relative;
-    right: auto;
-    top: auto;
-    transform: none;
     width: 100%;
     height: auto;
     margin-top: 2rem;
+    z-index: 2;
   }
 
   .square {
