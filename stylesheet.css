@@ -40,6 +40,7 @@ p{font-family: 'Tenor Sans', sans-serif;}
   padding: 2rem;
   position: relative;
   overflow: hidden;
+  margin-bottom: 4rem;
 }
 
 .column1 {
@@ -47,6 +48,9 @@ p{font-family: 'Tenor Sans', sans-serif;}
   padding-right: 2rem;
   position: relative;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .column2 {
@@ -61,7 +65,7 @@ p{font-family: 'Tenor Sans', sans-serif;}
 .container h1 {
   font-size: 6rem;
   letter-spacing: .02cap;
-  margin-top: 20px;
+  margin: 0;
   color: #2F5A8D;
   position: relative;
   z-index: 3;
@@ -69,7 +73,7 @@ p{font-family: 'Tenor Sans', sans-serif;}
 
 .container h2 {
   font-size: 2rem;
-  margin-top: 0;
+  margin: 0;
   position: relative;
   z-index: 3;
 }
@@ -78,7 +82,7 @@ p{font-family: 'Tenor Sans', sans-serif;}
   display: flex;
   justify-content: left;
   align-items: left;
-  padding-top: 30px;
+  margin: 0;
   position: relative;
   z-index: 3;
 }
@@ -107,18 +111,19 @@ p{font-family: 'Tenor Sans', sans-serif;}
   object-fit: contain;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 10px;
-  margin-left: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 0 2rem;
 }
 
-.grid-container img{
+.grid-container img {
   height: auto;
-  width:90%;
-  margin-top: 30%;
-  margin-bottom: 15%;
+  width: 90%;
+  margin: 0;
+  display: block;
 }
 
 #Clients {
@@ -126,10 +131,13 @@ p{font-family: 'Tenor Sans', sans-serif;}
   padding: 2rem;
   position: relative;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 #Clients h2 {
-  margin-top: 0;
+  margin: 0;
   font-size: 3rem;
   margin-left: 5%;
   position: relative;
@@ -146,53 +154,36 @@ p{font-family: 'Tenor Sans', sans-serif;}
   transform: translate(20%, 0%);
   }
 
-.overlay{
-  position:relative;
-  display:flex;
+.overlay {
+  position: relative;
+  display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  column-gap: 0px;
-  z-index:2;
-  transform: translate(10%, 65%);
-  align-content: center;
-  width:90%;
+  gap: 1rem;
+  z-index: 2;
+  transform: translate(10%, 0);
+  width: 90%;
 }
 
-.overlay h2{
-  margin-top: -1%;
-  margin-bottom: 2%;
+.overlay h2 {
+  margin: 0;
   font-size: 3rem;
-  margin-left: 0%;
-  margin-right: 0%;
   align-items: center;
 }
 
-svg{
-  color:#d5e8b9;
+.contact_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.twitter{
-  display:flex;
+.twitter, .discord, .telegram, .email {
+  display: flex;
   margin-left: 5%;
+  align-items: center;
+  gap: 1rem;
 }
-
-.discord{
-  display:flex;
-  margin-left: 5%;
-}
-
-.telegram{
-  display:flex;
-  margin-left: 5%;
-  
-}
-
-.email{
-  display:flex;
-  margin-left: 5%;
-}
-
 
 .text-arch{
 padding-left:20px;
@@ -208,9 +199,22 @@ a{
   
 }
 
-.card-group{
-  padding: 15px;
-  gap: 50px;
+.card-group {
+  padding: 2rem;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-body {
+  padding: 1rem;
 }
 
 #Services {
@@ -218,6 +222,9 @@ a{
   padding: 2rem;
   position: relative;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 #Contact_Page {
@@ -226,6 +233,9 @@ a{
   padding: 2rem;
   position: relative;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 @media (max-width:480px) {
