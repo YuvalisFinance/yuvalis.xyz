@@ -36,21 +36,21 @@ p{font-family: 'Tenor Sans', sans-serif;}
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 80vh;
-  padding: 2rem;
+  min-height: 100vh;
+  padding: 4rem 2rem;
   position: relative;
   overflow: hidden;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 
 .column1 {
   flex: 1;
-  padding-right: 2rem;
+  padding-right: 4rem;
   position: relative;
   z-index: 3;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .column2 {
@@ -60,6 +60,8 @@ p{font-family: 'Tenor Sans', sans-serif;}
   height: 100%;
   flex: 1;
   z-index: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .container h1 {
@@ -69,6 +71,7 @@ p{font-family: 'Tenor Sans', sans-serif;}
   color: #2F5A8D;
   position: relative;
   z-index: 3;
+  line-height: 1.2;
 }
 
 .container h2 {
@@ -76,6 +79,7 @@ p{font-family: 'Tenor Sans', sans-serif;}
   margin: 0;
   position: relative;
   z-index: 3;
+  line-height: 1.4;
 }
 
 .container p {
@@ -85,6 +89,8 @@ p{font-family: 'Tenor Sans', sans-serif;}
   margin: 0;
   position: relative;
   z-index: 3;
+  line-height: 1.6;
+  font-size: 1.2rem;
 }
 
 .square {
@@ -111,29 +117,16 @@ p{font-family: 'Tenor Sans', sans-serif;}
   object-fit: contain;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  margin: 2rem 0;
-  padding: 0 2rem;
-}
-
-.grid-container img {
-  height: auto;
-  width: 90%;
-  margin: 0;
-  display: block;
-}
-
 #Clients {
-  margin-top: 4rem;
-  padding: 2rem;
+  margin-top: 8rem;
+  padding: 4rem 2rem;
   position: relative;
   z-index: 3;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
 }
 
 #Clients h2 {
@@ -142,6 +135,7 @@ p{font-family: 'Tenor Sans', sans-serif;}
   margin-left: 5%;
   position: relative;
   z-index: 3;
+  line-height: 1.2;
 }
 
 .arch{
@@ -154,13 +148,95 @@ p{font-family: 'Tenor Sans', sans-serif;}
   transform: translate(20%, 0%);
   }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+
+.grid-container img {
+  height: auto;
+  width: 90%;
+  margin: 0;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.grid-container img:hover {
+  transform: scale(1.05);
+}
+
+#Services {
+  margin-top: 8rem;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+}
+
+.card-group {
+  padding: 2rem;
+  gap: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2F5A8D;
+}
+
+.card-text {
+  line-height: 1.6;
+  color: #333;
+}
+
+#Contact_Page {
+  margin-top: 8rem;
+  width: 100%;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+}
+
 .overlay {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   z-index: 2;
   transform: translate(10%, 0);
   width: 90%;
@@ -170,28 +246,36 @@ p{font-family: 'Tenor Sans', sans-serif;}
   margin: 0;
   font-size: 3rem;
   align-items: center;
+  line-height: 1.2;
 }
 
 .contact_info {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .twitter, .discord, .telegram, .email {
   display: flex;
   margin-left: 5%;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
 }
 
-.text-arch{
-padding-left:20px;
-font-size: 18px;
-margin-top: 0px;
-color: black;
-letter-spacing: .1cap;
-margin-bottom: 10px;
+.twitter:hover, .discord:hover, .telegram:hover, .email:hover {
+  transform: translateX(10px);
+}
+
+.text-arch {
+  padding-left: 20px;
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+  letter-spacing: .1cap;
 }
 
 a{
@@ -199,87 +283,51 @@ a{
   
 }
 
-.card-group {
-  padding: 2rem;
-  gap: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
 
-.card {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+  .column1 {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
 
-.card-body {
-  padding: 1rem;
-}
+  .container h1 {
+    font-size: 4rem;
+  }
 
-#Services {
-  margin-top: 4rem;
-  padding: 2rem;
-  position: relative;
-  z-index: 3;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 
-#Contact_Page {
-  margin-top: 4rem;
-  width: 100%;
-  padding: 2rem;
-  position: relative;
-  z-index: 3;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-@media (max-width:480px) {
-  .container img{
-    height:150px;
-    width:150px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position:relative;
-    transform: translate(60%, -15%);
-   
+  .card-group {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width:480px) {
-  .square{
-    display:none;
+@media (max-width: 480px) {
+  .container h1 {
+    font-size: 3rem;
   }
-}
 
-@media (max-width:800px) {
-  .square{
-    transform: translate(-60%, -60%) rotate(45deg);
+  .container h2 {
+    font-size: 1.5rem;
   }
-}
 
-@media (max-width:480px) {
-  #Clients h2{
-    font-size: 1.75rem;
-    margin-top: 1px;
-    display: flex;
-    justify-content: left;
+  .grid-container {
+    grid-template-columns: 1fr;
   }
-}
 
-@media (max-width:480px) {
-  .arch{
-    display:none;
+  .overlay {
+    transform: none;
+    width: 100%;
   }
-}
 
-@media (max-width:480px) {
-  .overlay h2{
-    margin: 0;
+  .twitter, .discord, .telegram, .email {
+    margin-left: 0;
   }
 }
