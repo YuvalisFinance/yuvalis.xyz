@@ -135,9 +135,16 @@ p{font-family: 'Tenor Sans', sans-serif;}
 
 #clientCarousel {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0.25rem;
+}
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .carousel-item {
@@ -145,11 +152,11 @@ p{font-family: 'Tenor Sans', sans-serif;}
   justify-content: center;
   align-items: center;
   padding: 0.25rem;
-  min-height: 150px;
+  min-height: 200px;
 }
 
 .carousel-item img {
-  max-width: 60%;
+  max-width: 80%;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -329,12 +336,13 @@ a{
     font-size: 4rem;
   }
 
-  #clientCarousel {
-    max-width: 100%;
+  .client-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
   
   .carousel-item img {
-    max-width: 50%;
+    max-width: 60%;
   }
 }
 
