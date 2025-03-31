@@ -154,13 +154,15 @@ p{font-family: 'Tenor Sans', sans-serif;}
   justify-content: center;
   align-items: center;
   padding: 0.25rem;
-  min-height: 200px;
 }
 
 .carousel-item img {
   max-width: 200px;
-  height: auto;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
   transition: transform 0.3s ease;
+  display: block;
 }
 
 .carousel-item img:hover {
