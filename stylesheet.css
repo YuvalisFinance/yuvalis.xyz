@@ -138,6 +138,7 @@ p{font-family: 'Tenor Sans', sans-serif;}
   max-width: 1600px;
   margin: 0 auto;
   padding: 0.25rem;
+  overflow: hidden;
 }
 
 .client-row {
@@ -146,7 +147,8 @@ p{font-family: 'Tenor Sans', sans-serif;}
   align-items: center;
   gap: 3rem;
   padding: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .carousel-item {
@@ -154,12 +156,13 @@ p{font-family: 'Tenor Sans', sans-serif;}
   justify-content: center;
   align-items: center;
   padding: 0.25rem;
+  width: 100%;
 }
 
 .carousel-item img {
-  max-width: 200px;
-  width: 100%;
-  aspect-ratio: 1;
+  max-width: 180px;
+  width: auto;
+  height: 80px;
   object-fit: contain;
   transition: transform 0.3s ease;
   display: block;
@@ -176,6 +179,7 @@ p{font-family: 'Tenor Sans', sans-serif;}
   border-radius: 3px;
   opacity: 0.7;
   transition: opacity 0.3s ease;
+  z-index: 10;
 }
 
 .carousel-control-prev:hover,
@@ -322,16 +326,12 @@ a{
 }
 
 @media (max-width: 1200px) {
-  #clientCarousel {
-    max-width: 1200px;
-  }
-  
   .client-row {
-    gap: 2.5rem;
+    gap: 2rem;
   }
   
   .carousel-item img {
-    max-width: 180px;
+    height: 70px;
   }
 }
 
@@ -367,11 +367,11 @@ a{
   }
 
   .client-row {
-    gap: 2rem;
+    gap: 1.5rem;
   }
   
   .carousel-item img {
-    max-width: 160px;
+    height: 60px;
   }
 
   .arch {
@@ -401,11 +401,11 @@ a{
   }
 
   .client-row {
-    gap: 1.5rem;
+    gap: 1rem;
   }
   
   .carousel-item img {
-    max-width: 120px;
+    height: 50px;
   }
 
   .arch {
