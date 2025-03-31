@@ -27,13 +27,13 @@
                 <div class="collapse navbar-collapse" id="navbarsExample09">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#Clients_link">Clients</a>
+                            <a class="nav-link active" href="#Clients">Clients</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#Services_link">Services</a>
+                            <a class="nav-link active" href="#Services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#Contact_Me_link">Contact Me</a>
+                            <a class="nav-link active" href="#Contact_Page">Contact Me</a>
                         </li>
                     </ul>
                 </div>
@@ -57,11 +57,29 @@
 
         <section id="Clients">
             <h2>Currently Contributing To</h2>
-            <div class="grid-container">
-                <div id="client1"><a href="https://www.graphadvocates.com/"><img src="./Assets/Images/AdvocatesDAO.png" alt="GraphAdvocates"></a></div>
-                <div id="client2"><a href="https://community.radworks.org/u/Yuvalis/activity"><img src="./Assets/Images/radworks.png" alt="Radworks"></a></div>
-                <div id="client3"><a href="https://www.buildersdao.tech/"><img src="./Assets/Images/BuildersDAO.png" alt="BuildersDAO"></a></div>
-                <div id="client4"><a href="https://infradao.com/"><img src="./Assets/Images/InfraDAO.png" alt="InfraDAO"></a></div>
+            <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://www.graphadvocates.com/"><img src="./Assets/Images/AdvocatesDAO.png" alt="GraphAdvocates"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://community.radworks.org/u/Yuvalis/activity"><img src="./Assets/Images/radworks.png" alt="Radworks"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.buildersdao.tech/"><img src="./Assets/Images/BuildersDAO.png" alt="BuildersDAO"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://infradao.com/"><img src="./Assets/Images/InfraDAO.png" alt="InfraDAO"></a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
 
