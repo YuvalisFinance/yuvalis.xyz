@@ -121,6 +121,7 @@ p{font-family: 'Tenor Sans', sans-serif;}
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  margin-bottom: 2rem;
 }
 
 #Clients h2 {
@@ -202,7 +203,7 @@ p{font-family: 'Tenor Sans', sans-serif;}
 }
 
 #Services {
-  margin-top: 0.25rem;
+  margin-top: 2rem;
   padding: 0.25rem;
   position: relative;
   z-index: 3;
