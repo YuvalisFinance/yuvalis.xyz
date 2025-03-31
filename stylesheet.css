@@ -135,7 +135,7 @@ p{font-family: 'Tenor Sans', sans-serif;}
 
 #clientCarousel {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0.25rem;
 }
@@ -144,8 +144,9 @@ p{font-family: 'Tenor Sans', sans-serif;}
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
   padding: 1rem;
+  flex-wrap: wrap;
 }
 
 .carousel-item {
@@ -180,15 +181,17 @@ p{font-family: 'Tenor Sans', sans-serif;}
   opacity: 1;
 }
 
-.arch{
-  height:400px; 
-  width:30%;
+.arch {
+  height: 400px;
+  width: 50%;
   border: 2px solid white;
   border-radius: 50% 50% 0 0;
   position: absolute;
-  margin: 20px;
-  transform: translate(20%, 0%);
-  }
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
 
 .grid-container {
   display: grid;
@@ -250,60 +253,84 @@ p{font-family: 'Tenor Sans', sans-serif;}
 }
 
 #Contact_Page {
-  margin-top: 1rem;
+  margin-top: 3rem;
   width: 100%;
-  padding: 0.5rem;
+  min-height: 450px;
+  padding: 0;
   position: relative;
-  z-index: 3;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .overlay {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
   z-index: 2;
-  transform: translate(10%, 0);
-  width: 90%;
+  width: 100%;
+  padding-top: 2rem;
 }
 
 .overlay h2 {
   margin: 0;
-  font-size: 3rem;
-  align-items: center;
+  font-size: 2.5rem;
+  text-align: center;
   line-height: 1.2;
+  color: #2F5A8D;
 }
 
 .contact_info {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
 }
 
 .twitter, .discord, .telegram, .email {
   display: flex;
-  margin-left: 5%;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.25rem;
+  gap: 1rem;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.twitter:hover, .discord:hover, .telegram:hover, .email:hover {
+  transform: scale(1.05);
 }
 
 .text-arch {
-  padding-left: 20px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0;
-  color: #333;
+  color: #2F5A8D;
   letter-spacing: .1cap;
+}
+
+.svg-arch {
+  color: #2F5A8D;
 }
 
 a{
   text-decoration: none !important;
   
+}
+
+@media (max-width: 1200px) {
+  #clientCarousel {
+    max-width: 1200px;
+  }
+  
+  .client-row {
+    gap: 2.5rem;
+  }
+  
+  .carousel-item img {
+    max-width: 180px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -338,11 +365,23 @@ a{
   }
 
   .client-row {
-    gap: 3rem;
+    gap: 2rem;
   }
   
   .carousel-item img {
     max-width: 160px;
+  }
+
+  .arch {
+    width: 80%;
+  }
+  
+  .overlay h2 {
+    font-size: 2rem;
+  }
+  
+  .contact_info {
+    max-width: 250px;
   }
 }
 
@@ -360,10 +399,26 @@ a{
   }
 
   .client-row {
-    gap: 2rem;
+    gap: 1.5rem;
   }
   
   .carousel-item img {
     max-width: 120px;
+  }
+
+  .arch {
+    width: 90%;
+  }
+  
+  .overlay h2 {
+    font-size: 1.8rem;
+  }
+  
+  .contact_info {
+    max-width: 220px;
+  }
+  
+  .text-arch {
+    font-size: 1rem;
   }
 }
