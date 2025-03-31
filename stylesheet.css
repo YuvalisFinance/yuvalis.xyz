@@ -134,20 +134,21 @@ p{font-family: 'Tenor Sans', sans-serif;}
 
 #clientCarousel {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.25rem;
 }
 
 .carousel-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0.25rem;
+  min-height: 150px;
 }
 
 .carousel-item img {
-  max-width: 90%;
+  max-width: 60%;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -158,9 +159,9 @@ p{font-family: 'Tenor Sans', sans-serif;}
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 5%;
+  width: 3%;
   background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 3px;
   opacity: 0.7;
   transition: opacity 0.3s ease;
 }
@@ -332,7 +333,7 @@ a{
   }
   
   .carousel-item img {
-    max-width: 80%;
+    max-width: 50%;
   }
 }
 
