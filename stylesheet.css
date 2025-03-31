@@ -166,6 +166,16 @@ p{font-family: 'Tenor Sans', sans-serif;}
   object-fit: contain;
   transition: transform 0.3s ease;
   display: block;
+  background: transparent;
+}
+
+/* Specific styling for Graph Foundation image */
+[alt="The Graph Foundation"] {
+  object-fit: contain;
+  object-position: center;
+  max-height: 80px;
+  width: auto;
+  background: transparent;
 }
 
 .carousel-item img:hover {
